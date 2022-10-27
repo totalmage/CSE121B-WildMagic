@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shalimar&display=swap');
+body{
+    text-align: center;
+    background-color: #ccd5ae85;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Shalimar', cursive;
+    font-size: 5em;
+}
+
+#load-img{
+    width:25vw;
+    height: auto;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+
+}
+
+#spell{
+    margin: 0 5rem;
+    margin-top: 10px;
+    border: solid 1px #d4a373;
+    border-radius: 12px;
+    padding: 2vw;
+    background-color: #fefae0;
+}
+#desc{
+    text-align: justify;
+}
+
+#spell-level{
+    font-style: italic;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+button{
+    background-color: #fefae0;
+    padding: 10px;
+    border: solid 2px #faedcd;
+    border-radius: 10px;
+    font-size: 1.5em;
+    margin: 10px;
+}
+button:hover{
+    background-color: #faedcd;
+    transition: 0.5s;
+    cursor: pointer;
+}
